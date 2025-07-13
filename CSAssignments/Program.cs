@@ -1,4 +1,6 @@
-﻿namespace CSAssignments
+﻿using System.Net.Http.Headers;
+
+namespace CSAssignments
 {
     internal class Program
     {
@@ -144,6 +146,79 @@
             //}
 
             #endregion
+
+            // ===================== Budget - Goto in Switch =====================
+
+            /*
+             * Budget is 1000 => Option 01
+             * Budget is 2000 => Option 02 + Option 01
+             * Budget is 3000 => Option 03 + Option 02 + Option 01
+             */
+
+            //Console.Write("Enter Your Budget : ");
+            //int.TryParse(Console.ReadLine(), out int budget);
+
+            //switch (budget)
+            //{
+            //    case 3000:
+            //        Console.WriteLine("Option 01");
+            //        Console.WriteLine("Option 02");
+            //        Console.WriteLine("Option 03");
+            //        break;
+            //    case 2000:
+            //        Console.WriteLine("Option 01");
+            //        Console.WriteLine("Option 02");
+            //        break;
+            //    case 1000:
+            //        Console.WriteLine("Option 01");
+            //        break;
+
+            //}
+
+
+
+            // Better way
+
+            
+            Console.Write("Enter Your Budget : ");
+            int.TryParse(Console.ReadLine(), out int budget);
+
+            switch (budget)
+            {
+                case 3000:
+                    goto case 2000;
+                    Console.WriteLine("Option 03");
+                    
+                case 2000:
+                    Console.WriteLine("Option 02");
+                    goto case 1000;
+                case 1000:
+                    Console.WriteLine("Option 01");
+                    break;
+
+            }
+
+
+
+
+
+
+
+        // ===================== Goto Example =====================
+
+
+        Retry:
+            Console.Write("Enter Your Name : ");
+            string name = Console.ReadLine();
+
+            if (name == "Mostafa")
+            
+                goto Retry;
+            
+            else
+            
+                Console.WriteLine($"Hello {name}");
+            
         }
     }
 }
