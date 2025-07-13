@@ -210,6 +210,26 @@
             // Example:
             // Input: (1,2), (2,4), (3,6)
             // Output: The points lie on the same straight line.
+
+            //Console.WriteLine("Enter x1 and y1:");
+            //int x1 = Convert.ToInt32(Console.ReadLine());
+            //int y1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter x2 and y2:");
+            //int x2 = Convert.ToInt32(Console.ReadLine());
+            //int y2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter x3 and y3:");
+            //int x3 = Convert.ToInt32(Console.ReadLine());
+            //int y3 = Convert.ToInt32(Console.ReadLine());
+
+            //// Use area of triangle formula to check collinearity
+            //int area = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
+
+            //if (area == 0)
+            //    Console.WriteLine("The points lie on the same straight line.");
+            //else
+            //    Console.WriteLine("The points do not lie on the same straight line.");
             #endregion
 
             #region 11. Identity matrix
