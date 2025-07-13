@@ -112,14 +112,14 @@
             // Input: hello
             // Output: olleh
 
-            Console.Write("Enter a string: ");
-            string input = Console.ReadLine();
+            //Console.Write("Enter a string: ");
+            //string input = Console.ReadLine();
 
-            char[] charArray = input.ToCharArray();
-            Array.Reverse(charArray);
+            //char[] charArray = input.ToCharArray();
+            //Array.Reverse(charArray);
 
-            string reversed = new string(charArray);
-            Console.WriteLine(reversed);
+            //string reversed = new string(charArray);
+            //Console.WriteLine(reversed);
             #endregion
 
             #region 7. Reverse integer
@@ -128,6 +128,18 @@
             // Input: 1234
             // Output: 4321
 
+            //Console.Write("Enter an integer: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int reversed = 0;
+
+            //while (number != 0)
+            //{
+            //    int digit = number % 10;
+            //    reversed = reversed * 10 + digit;
+            //    number /= 10;
+            //}
+
+            //Console.WriteLine(reversed);
 
             #endregion
 
