@@ -76,7 +76,7 @@
             //double result = Math.Pow(baseNum, exponent);
             //Console.WriteLine(result);
 
-#endregion
+            #endregion
 
             #region 5. Marks: total, average, percentage
             // TODO: Write a program to enter marks of five subjects and calculate total, average, and percentage.
@@ -86,6 +86,24 @@
             // Total Marks = 408
             // Average Marks = 81
             // Percentage = 81
+
+
+            int[] marks = new int[5];
+            int total = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Enter mark for subject {i + 1}: ");
+                marks[i] = Convert.ToInt32(Console.ReadLine());
+                total += marks[i];
+            }
+
+            int average = total / 5;
+            int percentage = (total * 100) / (5 * 100); // assuming each subject is out of 100
+
+            Console.WriteLine($"Total Marks = {total}");
+            Console.WriteLine($"Average Marks = {average}");
+            Console.WriteLine($"Percentage = {percentage}");
             #endregion
 
             #region 6. Reverse string
