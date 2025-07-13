@@ -88,22 +88,22 @@
             // Percentage = 81
 
 
-            int[] marks = new int[5];
-            int total = 0;
+            //int[] marks = new int[5];
+            //int total = 0;
 
-            for (int i = 0; i < 5; i++)
-            {
-                Console.Write($"Enter mark for subject {i + 1}: ");
-                marks[i] = Convert.ToInt32(Console.ReadLine());
-                total += marks[i];
-            }
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write($"Enter mark for subject {i + 1}: ");
+            //    marks[i] = Convert.ToInt32(Console.ReadLine());
+            //    total += marks[i];
+            //}
 
-            int average = total / 5;
-            int percentage = (total * 100) / (5 * 100); // assuming each subject is out of 100
+            //int average = total / 5;
+            //int percentage = (total * 100) / (5 * 100); // assuming each subject is out of 100
 
-            Console.WriteLine($"Total Marks = {total}");
-            Console.WriteLine($"Average Marks = {average}");
-            Console.WriteLine($"Percentage = {percentage}");
+            //Console.WriteLine($"Total Marks = {total}");
+            //Console.WriteLine($"Average Marks = {average}");
+            //Console.WriteLine($"Percentage = {percentage}");
             #endregion
 
             #region 6. Reverse string
@@ -111,6 +111,15 @@
             // Example:
             // Input: hello
             // Output: olleh
+
+            Console.Write("Enter a string: ");
+            string input = Console.ReadLine();
+
+            char[] charArray = input.ToCharArray();
+            Array.Reverse(charArray);
+
+            string reversed = new string(charArray);
+            Console.WriteLine(reversed);
             #endregion
 
             #region 7. Reverse integer
@@ -118,6 +127,8 @@
             // Example:
             // Input: 1234
             // Output: 4321
+
+
             #endregion
 
             #region 8. Prime numbers in range
