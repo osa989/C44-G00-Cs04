@@ -209,7 +209,139 @@ namespace CSAssignments
             else
                 Console.WriteLine($"Hello {name}");
 
-            #endregion           
+            #endregion
+
+            #region Patter Matching 
+            //object number = 5.6;
+            //switch (number)
+            //{
+            //    case int Value:
+            //        Console.WriteLine($"{Value} is integer");
+            //        break;
+            //    case double Value:
+            //        Console.WriteLine($"{Value} is double");
+            //        break;
+            //        case String Value:
+            //        Console.WriteLine($"{Value} is String");
+            //        break;
+            //        default:
+            //        Console.WriteLine("Invalid");
+            //        break;
+            //}
+            #endregion
+
+            #region Patter Matching & Case Guards
+            object number = 5.6;
+            switch (number)
+            {
+                case int Value when Value < 10 && Value > 5:
+                    Console.WriteLine($"{Value} is integer");
+                    break;
+                case double Value:
+                    Console.WriteLine($"{Value} is double");
+                    break;
+                case String Value:
+                    Console.WriteLine($"{Value} is String");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+            #endregion
+
+            #region example 03 [user definded datatype ] 
+            object Input = new Person { Id = 10, Name = "Ahmed", Age = 20 };
+            switch (Input)
+            {
+                case int Value:
+                    Console.WriteLine($"{Value} is integer");
+                    break;
+                case double Value:
+                    Console.WriteLine($"{Value} is double");
+                    break;
+                case String Value:
+                    Console.WriteLine($"{Value} is String");
+                    break;
+                case Person Value:
+                    Console.WriteLine("I'm a person");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+
+            #endregion
+
+            #region Switch C# 8.0 [New Feature]
+
+            Console.Write("Enter Your Option (1 , 2 , 3) : ");
+            string option = Console.ReadLine();
+            string Msg = string.Empty; // " "
+
+            //switch (option)
+            //{
+            //    case "1":
+            //        Msg = "Option 1";
+            //        break;
+            //    case "2":
+            //        Msg = "Option 2";
+            //        break;
+            //    case "3":
+            //        Msg = "Option 03";
+            //        break;
+            //    default:
+            //        Msg = "No Option Found !";
+            //        break;
+            //}
+
+
+            //another way 
+
+            //Msg = option switch // 3
+            //{
+            //    "1" => "Option 1",
+            //    "2" => "Option 2",
+            //    "3" => "Option 3",
+            //    _ => "No Option Found !"
+            //};
+
+            //Console.WriteLine(Msg);
+
+            #endregion
+
+            #region Proberty pattern
+            //Person person = new Person { Id = 10, Age = 25 ,Name ="Ahmed"};
+            //String Message = person switch
+            //{
+            //    { Name: "Ahmed", Age: 10 } => "Hello Ahmed",
+            //    { Name: "Omar" } => "Hello Omar",
+            //};
+
+            #endregion
+
+            #region Example 04 nullable type relational patterns [partially]
+            //int? Number = 10;
+            //string Result = Number switch
+            //{
+            //    null => "null value",
+            //    int X when X > 0 => "Positive ",
+            //    int X when X < 0 => "Negative ",
+            //    _=> "Invalid",
+            //};
+            #endregion
+
+            #region C#9 switch with relational patterns
+            int Number = 20;
+            string Message = Number switch
+            {
+                < 10 => "less than 10 ",
+                >= 10 and <= 20 => "Between 10 and 20",
+                > 20 or < 10 => "outside range 20",
+            };
+
+            Console.WriteLine(Message);
+            #endregion
+
         }
     }
 }
