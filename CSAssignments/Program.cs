@@ -65,7 +65,18 @@
             // Example:
             // Input: 4 3
             // Output: 64
-            #endregion
+
+
+            //Console.Write("Enter the base number: ");
+            //int baseNum = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Enter the exponent: ");
+            //int exponent = Convert.ToInt32(Console.ReadLine());
+
+            //double result = Math.Pow(baseNum, exponent);
+            //Console.WriteLine(result);
+
+#endregion
 
             #region 5. Marks: total, average, percentage
             // TODO: Write a program to enter marks of five subjects and calculate total, average, and percentage.
