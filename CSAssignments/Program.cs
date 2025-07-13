@@ -12,6 +12,15 @@
             // Example:
             // Input: 5
             // Output: 1, 2, 3, 4, 5
+            Console.WriteLine("Enter a number ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= number; i++)
+            {
+                Console.Write(i);
+                if (i < number)
+                    Console.Write(", ");
+            }
             #endregion
 
             #region 2. Multiplication table up to 12
