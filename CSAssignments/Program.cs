@@ -12,15 +12,17 @@
             // Example:
             // Input: 5
             // Output: 1, 2, 3, 4, 5
-            Console.WriteLine("Enter a number ");
-            int number = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= number; i++)
-            {
-                Console.Write(i);
-                if (i < number)
-                    Console.Write(", ");
-            }
+
+            //Console.WriteLine("Enter a number ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    Console.Write(i);
+            //    if (i < number)
+            //        Console.Write(", ");
+            //}
             #endregion
 
             #region 2. Multiplication table up to 12
@@ -28,6 +30,15 @@
             // Example:
             // Input: 5
             // Output: 5 10 15 20 25 30 35 40 45 50 55 60
+            Console.Write("Enter a number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= 12; i++)
+            {
+                Console.Write(number * i);
+                if (i < 12)
+                    Console.Write(" ");
+            }
             #endregion
 
             #region 3. Print even numbers between 1 and user input
