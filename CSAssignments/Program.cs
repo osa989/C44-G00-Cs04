@@ -182,6 +182,27 @@
             // Example:
             // Input: 25
             // Output: The Binary of 25 is 11001
+
+            //Console.Write("Enter a decimal number: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //int num = number;
+            //string binary = "";
+
+            //if (num == 0)
+            //{
+            //    binary = "0";
+            //}
+            //else
+            //{
+            //    while (num > 0)
+            //    {
+            //        binary = (num % 2) + binary;
+            //        num /= 2;
+            //    }
+            //}
+
+            //Console.WriteLine($"The Binary of {number} is {binary}");
             #endregion
 
             #region 10. Check if 3 points lie on a straight line
