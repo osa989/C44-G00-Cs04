@@ -30,15 +30,17 @@
             // Example:
             // Input: 5
             // Output: 5 10 15 20 25 30 35 40 45 50 55 60
-            Console.Write("Enter a number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= 12; i++)
-            {
-                Console.Write(number * i);
-                if (i < 12)
-                    Console.Write(" ");
-            }
+
+            //Console.Write("Enter a number: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.Write(number * i);
+            //    if (i < 12)
+            //        Console.Write(" ");
+            //}
             #endregion
 
             #region 3. Print even numbers between 1 and user input
@@ -46,6 +48,16 @@
             // Example:
             // Input: 15
             // Output: 2 4 6 8 10 12 14
+
+
+            //Console.Write("Enter a number: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 2; i <= number; i += 2)
+            //{
+            //    Console.Write(i + " ");
+            //}
+            //Console.WriteLine();
             #endregion
 
             #region 4. Power calculation
