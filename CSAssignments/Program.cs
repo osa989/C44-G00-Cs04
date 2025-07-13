@@ -272,10 +272,66 @@ namespace CSAssignments
 
             #endregion
 
+            #region Switch C# 8.0 [New Feature]
 
-         
+            Console.Write("Enter Your Option (1 , 2 , 3) : ");
+            string option = Console.ReadLine();
+            string Msg = string.Empty; // " "
+
+            //switch (option)
+            //{
+            //    case "1":
+            //        Msg = "Option 1";
+            //        break;
+            //    case "2":
+            //        Msg = "Option 2";
+            //        break;
+            //    case "3":
+            //        Msg = "Option 03";
+            //        break;
+            //    default:
+            //        Msg = "No Option Found !";
+            //        break;
+            //}
 
 
+            //another way 
+
+            //Msg = option switch // 3
+            //{
+            //    "1" => "Option 1",
+            //    "2" => "Option 2",
+            //    "3" => "Option 3",
+            //    _ => "No Option Found !"
+            //};
+
+            //Console.WriteLine(Msg);
+
+            #endregion
+
+            #region Proberty pattern
+            //Person person = new Person { Id = 10, Age = 25 ,Name ="Ahmed"};
+            //String Message = person switch
+            //{
+            //    { Name: "Ahmed", Age: 10 } => "Hello Ahmed",
+            //    { Name: "Omar" } => "Hello Omar",
+            //};
+
+            #endregion
+
+            #region Example 04 nullable type relational patterns [partially]
+            //int? Number = 10;
+            //string Result = Number switch
+            //{
+            //    null => "null value",
+            //    int X when X > 0 => "Positive ",
+            //    int X when X < 0 => "Negative ",
+            //    _=> "Invalid",
+            //};
+            #endregion
+
+
+          
         }
     }
 }
