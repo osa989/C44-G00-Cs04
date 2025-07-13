@@ -149,6 +149,32 @@
             // Input starting number: 1
             // Input ending number: 50
             // Output: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+
+            //Console.Write("Input starting number: ");
+            //int start = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Input ending number: ");
+            //int end = Convert.ToInt32(Console.ReadLine());
+
+            //for (int num = start; num <= end; num++)
+            //{
+            //    if (num < 2)
+            //        continue;
+
+            //    bool isPrime = true;
+
+            //    for (int i = 2; i <= Math.Sqrt(num); i++)
+            //    {
+            //        if (num % i == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //    }
+
+            //    if (isPrime)
+            //        Console.Write(num + " ");
+            //}
             #endregion
 
             #region 9. Decimal to binary conversion (without array)
