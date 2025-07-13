@@ -209,7 +209,73 @@ namespace CSAssignments
             else
                 Console.WriteLine($"Hello {name}");
 
-            #endregion           
+            #endregion
+
+            #region Patter Matching 
+            //object number = 5.6;
+            //switch (number)
+            //{
+            //    case int Value:
+            //        Console.WriteLine($"{Value} is integer");
+            //        break;
+            //    case double Value:
+            //        Console.WriteLine($"{Value} is double");
+            //        break;
+            //        case String Value:
+            //        Console.WriteLine($"{Value} is String");
+            //        break;
+            //        default:
+            //        Console.WriteLine("Invalid");
+            //        break;
+            //}
+            #endregion
+
+            #region Patter Matching & Case Guards
+            object number = 5.6;
+            switch (number)
+            {
+                case int Value when Value < 10 && Value > 5:
+                    Console.WriteLine($"{Value} is integer");
+                    break;
+                case double Value:
+                    Console.WriteLine($"{Value} is double");
+                    break;
+                case String Value:
+                    Console.WriteLine($"{Value} is String");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+            #endregion
+
+            #region example 03 [user definded datatype ] 
+            object Input = new Person { Id = 10, Name = "Ahmed", Age = 20 };
+            switch (Input)
+            {
+                case int Value:
+                    Console.WriteLine($"{Value} is integer");
+                    break;
+                case double Value:
+                    Console.WriteLine($"{Value} is double");
+                    break;
+                case String Value:
+                    Console.WriteLine($"{Value} is String");
+                    break;
+                case Person Value:
+                    Console.WriteLine("I'm a person");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+
+            #endregion
+
+
+         
+
+
         }
     }
 }
