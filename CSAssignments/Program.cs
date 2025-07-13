@@ -331,15 +331,15 @@ namespace CSAssignments
             #endregion
 
             #region C#9 switch with relational patterns
-            int Number = 20;
-            string Message = Number switch
-            {
-                < 10 => "less than 10 ",
-                >= 10 and <= 20 => "Between 10 and 20",
-                > 20 or < 10 => "outside range 20",
-            };
+            //int Number = 20;
+            //string Message = Number switch
+            //{
+            //    < 10 => "less than 10 ",
+            //    >= 10 and <= 20 => "Between 10 and 20",
+            //    > 20 or < 10 => "outside range 20",
+            //};
 
-            Console.WriteLine(Message);
+            //Console.WriteLine(Message);
             #endregion
 
         }
